@@ -32,4 +32,11 @@ public class DevelopersGenerator extends Generator<Developer> {
     int numberOfMaxibons = random.nextInt(0, Integer.MAX_VALUE);
     return new Developer(name, numberOfMaxibons);
   }
+
+    public Developer generate(SourceOfRandomness random) {
+        String name = RandomStringUtils.randomAlphabetic(random.nextInt(16));
+        int numberOfMaxibons = random.nextInt(0, Integer.MAX_VALUE);
+        return new Developer(name, numberOfMaxibons);
+    }
+
 }
