@@ -22,9 +22,9 @@ class Developer {
   private final int numberOfMaxibonsToGrab;
 
   Developer(String name, int numberOfMaxibonsToGrab) {
-//    if (numberOfMaxibonsToGrab < 0) {
-//      numberOfMaxibonsToGrab = 0;
-//    }
+    if (numberOfMaxibonsToGrab < 0) {
+      numberOfMaxibonsToGrab = 0;
+    }
     this.name = name;
     this.numberOfMaxibonsToGrab = numberOfMaxibonsToGrab;
   }
